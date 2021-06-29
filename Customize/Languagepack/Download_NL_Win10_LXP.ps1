@@ -25,7 +25,7 @@ $LanguagepackZip = 'Languagepack_NL.zip'
 $ProgressPreference = 'SilentlyContinue'
 Invoke-WebRequest -Uri $LanguagepackURL -OutFile $LanguagepackZip
 
-write-host 'AIB Customization: Unzip NL Language'
+write-host 'AIB Customization: Unzip NL Languagepack'
 Expand-Archive -LiteralPath "C:\Temp\Languagepack\Languagepack_NL.zip" -DestinationPath "$Localpath" -Force
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Verbose
