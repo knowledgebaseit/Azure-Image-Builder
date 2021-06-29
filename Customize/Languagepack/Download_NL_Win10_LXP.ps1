@@ -1,6 +1,6 @@
 <#Author       : Dennis Westerman
 # Creation Date: 2021-06-29
-# Usage        : Install NL Languagepack
+# Usage        : Download and install NL Languagepack
 #*********************************************************************************
 # Date                  Version     Changes
 #------------------------------------------------------------------------
