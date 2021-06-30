@@ -42,4 +42,7 @@ Set-Location -Path C:\\Temp\\Office
 write-host "Starting Office NL-NL 64-bit installation"
 .\setup.exe /Configure c:\Temp\Office\NL-NL_OfficeClientEdition_64.xml
 .\After_Office_install.ps1
-write-host "Installation Office NL-NL 64-bit Complete"
+write-host "AIB Customization: Installation Office NL-NL 64-bit Complete"
+
+write-host 'AIB Customization: Set-TimeZone to West Europe'
+Set-TimeZone -Id "W. Europe Standard Time" -PassThru
