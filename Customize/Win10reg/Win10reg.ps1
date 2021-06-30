@@ -18,6 +18,7 @@
 New-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name 'NoAutoUpdate' -Value '1' -PropertyType DWORD -Force | Out-Null
 
 #Block Cleanup Of Unused Preinstalled LangPacks
+Disable-ScheduledTask -TaskPath "\Microsoft\Windows\AppxDeploymentClient\" -TaskName "Pre-staged app cleanup"
 New-Item -Path 'HKLM:\Software\Policies\Microsoft\Control Panel\International' -Force | Out-Null
 New-ItemProperty -Path 'HKLM:\Software\Policies\Microsoft\Control Panel\International' -Name 'BlockCleanupOfUnusedPreinstalledLangPacks' -Value '1' -PropertyType DWORD -Force | Out-Null
 
