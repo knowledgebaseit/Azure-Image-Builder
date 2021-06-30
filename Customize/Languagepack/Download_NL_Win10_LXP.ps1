@@ -33,3 +33,5 @@ Set-Location -Path C:\\Temp\\Languagepack
 write-host 'AIB Customization: Install NL Languagepack '
 .\Install_NL_Win10_LXP.ps1
 write-host "Installation Install NL Languagepack Complete"
+write-host 'AIB Customization: Restart Computer '
+Restart-Computer -Force
