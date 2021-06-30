@@ -32,4 +32,5 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Verbose
 Set-Location -Path C:\\Temp\\Languagepack
 write-host 'AIB Customization: Install NL Languagepack '
 .\Install_NL_Win10_LXP.ps1
+.\Install_Edge_NL.ps1
 write-host "Installation Install NL Languagepack Complete"
