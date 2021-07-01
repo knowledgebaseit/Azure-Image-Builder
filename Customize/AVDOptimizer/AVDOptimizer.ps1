@@ -15,5 +15,5 @@ Expand-Archive -LiteralPath "C:\Temp\Optimize\Windows_10_VDI_Optimize-master.zip
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Verbose
 Set-Location -Path C:\\Temp\\Optimize\\Virtual-Desktop-Optimization-Tool-main
 write-host 'AIB Customization: Optimize WVD'
-.\Win10_VirtualDesktop_Optimize.ps1 -Optimizations All -AcceptEULA -Verbose
+.\Win10_VirtualDesktop_Optimize.ps1 -Optimizations All -Reboot -AcceptEULA -Verbose
 write-host "Optimize WVD Complete"
