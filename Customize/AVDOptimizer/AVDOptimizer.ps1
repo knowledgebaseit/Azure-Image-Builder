@@ -42,5 +42,5 @@ Set-Content $updatePath $file
 
 # run script
 # .\optimize -WindowsVersion 2004 -Verbose
-.\Win10_VirtualDesktop_Optimize.ps1 -Optimizations All -Reboot -AcceptEULA -Verbose
+.\Win10_VirtualDesktop_Optimize.ps1 -Optimizations All -Restart -AcceptEULA -Verbose
  write-host 'AIB Customization: Finished OS Optimizations script'
