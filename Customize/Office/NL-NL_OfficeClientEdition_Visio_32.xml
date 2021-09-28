@@ -20,7 +20,6 @@
   <Property Name="SharedComputerLicensing" Value="1" />
   <Property Name="AUTOACTIVATE" Value="1" />
   <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
-  <Property Name="DeviceBasedLicensing" Value="1" />
   <Updates Enabled="FALSE" />
   <RemoveMSI />
   <AppSettings>
