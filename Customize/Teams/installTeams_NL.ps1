@@ -45,6 +45,7 @@ $ProgressPreference = 'SilentlyContinue'
 Invoke-WebRequest -Uri $webSocketsURL -OutFile $outputPath
 Start-Process -FilePath msiexec.exe -Args "/I $outputPath /quiet /norestart /log webSocket.log" -Wait
 write-host 'AIB Customization: Finished Install the Teams WebSocket Service'
+
 # install Teams NL
 write-host 'AIB Customization: Install MS Teams'
 $teamsURL = 'https://teams.microsoft.com/downloads/desktopurl?nlv=production&plat=windows&arch=x64&managedInstaller=true&download=true'
