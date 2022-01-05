@@ -104,7 +104,7 @@
             "distribute": [
                 {
                     "type": "SharedImage",
-                    "galleryImageId": "/subscriptions/<subscriptionID>/resourceGroups/<rgName>/providers/Microsoft.Compute/galleries/<sharedImageGalName>/images/<imageDefName>/versions/<imageversion>",
+                    "galleryImageId": "/subscriptions/<subscriptionID>/resourceGroups/<sigrgName>/providers/Microsoft.Compute/galleries/<sharedImageGalName>/images/<imageDefName>/versions/<imageversion>",
                     "runOutputName": "<runOutputName>",
                     "artifactTags": {
                         "source": "avd10",
