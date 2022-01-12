@@ -296,13 +296,13 @@ New-AzRoleAssignment -ObjectId $idenityNamePrincipalId -RoleDefinitionName $imag
 
 # Create gallery
 if ($null -eq (Get-AzGallery -GalleryName $sigGalleryName -ResourceGroupName $SIGResourceGroup -ErrorAction SilentlyContinue)) {
-    New-AzGallery -GalleryName $sigGalleryName -ResourceGroupName $SIGResourceGroup -Location $location
+    New-AzGallery -ResourceGroupName $SIGResourceGroup -GalleryName $sigGalleryName -Location $location
 }else {Write-Host "Gallery $sigGalleryName already exists"
 }
 
 # Create gallery definition
 if ($null -eq (Get-AzGalleryImageDefinition -GalleryName $sigGalleryName -ResourceGroupName $SIGResourceGroup -Name $imageDefName -ErrorAction SilentlyContinue)) {
-    New-AzGalleryImageDefinition -GalleryName $sigGalleryName -ResourceGroupName $SIGResourceGroup -Location $location -Name $imageDefName -OsState generalized -OsType Windows -Publisher "Knowledgebase" -Offer "Windows" -Sku "10avd"
+    New-AzGalleryImageDefinition -ResourceGroupName $SIGResourceGroup -GalleryName $sigGalleryName -Location $location -Name $imageDefName -OsState generalized -OsType Windows -Publisher "Knowledgebase" -Offer "Windows" -Sku "10avd"
 }else {Write-Host "Gallery $imageDefName already exists"
 }
 
