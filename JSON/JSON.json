@@ -65,7 +65,7 @@
                         "name": "Languagepack",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "<Languagepack>"
+                        "scriptUri": "<languagepack>"
                     },
                     {
                         "type": "WindowsRestart",
@@ -84,7 +84,7 @@
                         "name": "Teams",
                         "runElevated": true,
                         "runAsSystem": true,
-                        "scriptUri": "<Teams>"
+                        "scriptUri": "<teams>"
                     },
                     {
                         "type": "WindowsRestart",
