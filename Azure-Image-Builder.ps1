@@ -294,6 +294,13 @@ New-AzRoleDefinition -InputFile  ./aibRoleImageCreation.json
 New-AzRoleAssignment -ObjectId $idenityNamePrincipalId -RoleDefinitionName $imageRoleDefName -Scope "/subscriptions/$subscriptionID/resourceGroups/$imageResourceGroup"
 New-AzRoleAssignment -ObjectId $idenityNamePrincipalId -RoleDefinitionName $imageRoleDefName -Scope "/subscriptions/$subscriptionID/resourceGroups/$SIGResourceGroup"
 
+# Create gallery SIG ResourceGroup
+if ($null -eq (Get-AzResourceGroup -Name $SIGResourceGroup -ErrorAction SilentlyContinue)) {
+    New-AzResourceGroup -Name $SIGResourceGroup -Location $location
+}else {
+    Write-Host "ResourceGroup $SIGResourceGroup already exists"
+}
+
 # Create gallery
 if ($null -eq (Get-AzGallery -GalleryName $sigGalleryName -ResourceGroupName $SIGResourceGroup -ErrorAction SilentlyContinue)) {
     New-AzGallery -ResourceGroupName $SIGResourceGroup -GalleryName $sigGalleryName -Location $location
