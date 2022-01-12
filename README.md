@@ -1,1 +1,1 @@
-# AIB
+# Azure Image Builder
