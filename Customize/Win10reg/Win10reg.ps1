@@ -67,7 +67,3 @@ Start-Sleep -Seconds 5
 #Sysprep Mode:VM fix applied
 ((Get-Content -path C:\DeprovisioningScript.ps1 -Raw) -replace 'Sysprep.exe /oobe /generalize /quiet /quit', 'Sysprep.exe /oobe /generalize /quit /mode:vm' ) | Set-Content -Path C:\DeprovisioningScript.ps1
 
-#Deleting temp folder
-Get-ChildItem -Path 'C:\temp' -Recurse | Remove-Item -Recurse -Force
-Remove-Item -Path 'C:\temp' -Force | Out-Null
-
